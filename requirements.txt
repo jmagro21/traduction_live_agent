@@ -1,0 +1,19 @@
+# Moteur vosk (defaut) : reconnaissance streaming locale + traduction
+vosk>=0.3.45
+deep-translator>=1.11
+
+# Moteur google (--engine google)
+SpeechRecognition>=3.10
+
+# Moteur whisper (--engine whisper)
+faster-whisper>=1.0
+
+# Acceleration faster-whisper sur GPU NVIDIA sous Windows
+nvidia-cublas-cu12>=12.3; platform_system == "Windows"
+nvidia-cudnn-cu12>=9,<10; platform_system == "Windows"
+
+# Commun
+sounddevice>=0.4
+numpy>=1.24
+websockets>=14,<16
+python-dotenv>=1.0,<2
